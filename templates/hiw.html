@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="htmlcss bootstrap, multi level menu, submenu, treeview nav menu examples"
+    />
+    <title>Sepsis Prediction Website </title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <!-- <a href="#" class="logo">Sepsis</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    </nav> -->
+    <header>
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search" />
+        <input type="checkbox" id="show-menu" />
+        <label for="show-menu" class="menu-icon" id="menu"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <div class="content">
+          <div class="logo"><a href="http://127.0.0.1:5000/">Sepsis</a></div>
+          <ul class="links">
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/about">About</a></li>
+            <li>
+              <a href="http://127.0.0.1:5000/" class="desktop-link">Tests</a>
+              <input type="checkbox" id="show-features" />
+              <label for="show-features">Tests</label>
+              <ul>
+                <li>
+                  <a href="http://127.0.0.1:5000/rapidtest">Rapid Test</a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5000/advancedtest">Advanced Test</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5000/#contact">Contact</a></li>
+            <li><a href="http://127.0.0.1:5000/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <!-- <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form> -->
+      </nav>
+    </div>
+  </header>
+
+  <section class="home" id="home">
+    <!--card layout start-->
+    <div class="grid">
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="./static/images/Test.png" alt=""/>
+          <div class="card-content">
+            <h1 class="card-header">Step 1</h1>
+            <p class="card-text">
+              Please select the test you want to take.
+               <!-- <strong>Please select the text you want to take.</strong> -->
+            
+            </p>
+            <!-- <button class="card-btn">Visit <span>&rarr;</span></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img
+            class="card-img"
+            src="./static/images/rapid.png"
+            alt=""
+          />
+          <div class="card-content">
+            <h1 class="card-header">Step 2</h1>
+            <p class="card-text">
+             Rapid Test is a small test in which user have to answer some question
+              <strong></strong>
+            </p>
+            <!-- <button class="card-btn">Visit <span>&rarr;</span></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="./static/images/start.png" alt="" height="180%" />
+          <div class="card-content">
+            <h1 class="card-header">Step 3</h1>
+            <p class="card-text">
+              Click on Continue button after reading. 
+              <strong></strong>
+            </p>
+            <!-- <button class="card-btn">Visit <span>&rarr;</span></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img
+            class="card-img"
+            src="./static/images/Ques.png"
+            alt=""
+          />
+          <div class="card-content">
+            <h1 class="card-header">Step 4</h1>
+            <p class="card-text">
+             After Selecting your symptoms,
+              <strong>Please click on Next Question Button.</strong>
+            </p>
+            <!-- <button class="card-btn">Visit <span>&rarr;</span></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img
+            class="card-img"
+            src="./static/images/completed.png"
+            alt=""
+          />
+          <div class="card-content">
+            <h1 class="card-header">Step 5</h1>
+            <p class="card-text">
+              After selecting your symptom & completing the test.
+              <strong>Click on Quit button.</strong>
+            </p>
+            <!-- <button class="card-btn">Visit <span>&rarr;</span></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img
+            class="card-img"
+            src="./static/images/advanced.png"
+            alt=""
+          />
+          <div class="card-content">
+            <h1 class="card-header">Step 6</h1>
+            <p class="card-text">
+             If you have many vital symptoms then click on 
+              <strong>Advanced test option</strong> for better prediction.
+            </p>
+            <!-- <button class="card-btn">Visit <span>&rarr;</span></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img
+            class="card-img"
+            src="./static/images/advanced_para.png"
+            alt=""
+          />
+          <div class="card-content">
+            <h1 class="card-header">Step 7</h1>
+            <p class="card-text">
+             After entering all parameters,
+              <strong>Click on Check Button</strong>
+            </p>
+            <!-- <button class="card-btn">Visit <span>&rarr;</span></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img
+            class="card-img"
+            src="./static/images/output.png"
+            alt=""
+          />
+          <div class="card-content">
+            <h1 class="card-header">Step 8</h1>
+            <p class="card-text">
+             After reading your parameter it will show whether the 
+              <strong>user have sepsis or not.</strong>
+            </p>
+            <!-- <button class="card-btn">Visit <span>&rarr;</span></button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--card layout end-->
+  </section>
+
+    <!-- <div class="slider">
+     
+      <div class="slide active">
+        
+       
+        <img src="./static/images/home.png" alt="">
+        <div class="info">
+          <h2>Step 1</h2>
+          <p>Select the test you want to take.</p>
+        </div>
+       
+      </div>
+      <div class="slide">
+        <img src="2.jpg" alt="">
+        
+      </div>
+      <div class="slide">
+        <img src="3.jpg" alt="">
+        
+      </div>
+      <div class="slide">
+        <img src="4.jpg" alt="">
+        
+      </div>
+      <div class="slide">
+        <img src="5.jpg" alt="">
+        
+      </div>
+      <div class="navigation">
+        <i class="fas fa-chevron-left prev-btn"></i>
+        <i class="fas fa-chevron-right next-btn"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+      </div>
+    </div> -->
+
+
+
+
+
+  <!-- </section>  -->
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+     
+          <!-- <h3>about us</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+            rerum explicabo impedit aperiam non quod. Velit sunt voluptatem nemo
+            beatae.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">Mumbai</a>
+          <a href="#">pune</a>
+          <a href="#">chennai</a>
+          <a href="#">bangalore</a>
+          <a href="#">hyderabad</a>
+          <a href="#">new dalhi</a>
+        </div> -->
+
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <!-- <a href="#">protect</a> -->
+          <a href="#">symtoms</a>
+          <a href="#">prevent</a>
+         
+        </div>
+
+        <div class="box">
+          <h3>Contact info</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890.</p>
+          <p><i class="fas fa-envelope"></i> example@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> mumbai, indai - 400104.</p>
+      
+      </div>
+
+      <!-- <h1 class="credit"> created by <a href="#"> mr. web designer </a> all rights reserved! </h1> -->
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- scroll top  -->
+
+    <a href="#home" class="scroll-top">
+      <img src="./static/images/scroll-img.png" alt="" />
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js file link  -->
+    <!-- <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+      const slider = document.querySelector(".slider");
+      const nextBtn = document.querySelector(".next-btn");
+      const prevBtn = document.querySelector(".prev-btn");
+      const slides = document.querySelectorAll(".slide");
+      const slideIcons = document.querySelectorAll(".slide-icon");
+      const numberOfSlides = slides.length;
+      var slideNumber = 0;
+  
+      //image slider next button
+      nextBtn.addEventListener("click", () => {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+  
+        slideNumber++;
+  
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+  
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      });
+  
+      //image slider previous button
+      prevBtn.addEventListener("click", () => {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+  
+        slideNumber--;
+  
+        if(slideNumber < 0){
+          slideNumber = numberOfSlides - 1;
+        }
+  
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      });
+  
+      //image slider autoplay
+      var playSlider;
+  
+      var repeater = () => {
+        playSlider = setInterval(function(){
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+          });
+  
+          slideNumber++;
+  
+          if(slideNumber > (numberOfSlides - 1)){
+            slideNumber = 0;
+          }
+  
+          slides[slideNumber].classList.add("active");
+          slideIcons[slideNumber].classList.add("active");
+        }, 4000);
+      }
+      repeater();
+  
+      //stop the image slider autoplay on mouseover
+      slider.addEventListener("mouseover", () => {
+        clearInterval(playSlider);
+      });
+  
+      //start the image slider autoplay again on mouseout
+      slider.addEventListener("mouseout", () => {
+        repeater();
+      });
+      </script> -->
+        
+  </body>
+</html>

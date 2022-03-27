@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="htmlcss bootstrap, multi level menu, submenu, treeview nav menu examples"
+    />
+    <title>Sepsis Prediction</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <!-- <a href="#" class="logo">Sepsis</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    </nav> -->
+
+      <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search" />
+          <input type="checkbox" id="show-menu" />
+          <label for="show-menu" class="menu-icon" id="menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+          <div class="content">
+            <div class="logo"><a href="http://127.0.0.1:5000/">Sepsis</a></div>
+            <ul class="links">
+              <li><a href="http://127.0.0.1:5000/">Home</a></li>
+              <li><a href="http://127.0.0.1:5000/about">About</a></li>
+              <li>
+                <a href="http://127.0.0.1:5000/" class="desktop-link">Tests</a>
+                <input type="checkbox" id="show-features" />
+                <label for="show-features">Tests</label>
+                <ul>
+                  <li>
+                    <a href="http://127.0.0.1:5000/rapidtest">Rapid Test</a>
+                  </li>
+                  <li>
+                    <a href="http://127.0.0.1:5000/advancedtest"
+                      >Advanced Test</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="http://127.0.0.1:5000/#contact">Contact</a></li>
+              <li><a href="http://127.0.0.1:5000/faq">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form> -->
+        </nav>
+      </div>
+    </header>
+
+    <!-- faq section start-->
+    <!-- <section class="faq"> -->
+    <div class="accordian">
+      <div class="image-box">
+        <img src="./static/images/FAQs-amico.svg" alt="" />
+      </div>
+      <div class="accordian-text">
+        <div class="title">FAQ</div>
+        <ul class="faq-text">
+          <li>
+            <div class="question-arrow">
+              <span class="question">What is sepsis?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>
+              A more specific definition of sepsis can be found here but in
+              brief, sepsis is your body’s toxic, or severe, response to an
+              infection. This extreme inflammatory response (swelling) in your
+              body is frequently caused by a bacterial or viral infection, such
+              as pneumonia or influenza, but it can be caused by parasitic or
+              fungal infections. Your body’s immune system, which is supposed to
+              fight off the infection, goes into overdrive and begins to attack
+              your body. Like heart attacks and strokes, sepsis is a medical
+              emergency and must be treated quickly and properly for survival.
+              Some people still refer to sepsis as septicaemia. That is the
+              older way of referring to it, but sepsis is the preferred term.
+            </p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">What causes sepsis? </span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>
+              Sepsis is a condition caused by your body’s immune system
+              responding abnormally to an infection, which can lead to tissue
+              damage, organ failure, and death. The infection can start anywhere
+              in your body; it may be only in one part, or it may be widespread.
+              Your immune system usually works to fight any germs (bacteria,
+              viruses, fungi), or to prevent infection. However, for reasons we
+              don’t fully understand, sometimes the immune system goes into
+              overdrive and starts to attack our organs and other tissues. It
+              can happen as a response to any injury or infection, anywhere in
+              the body. It can result from: a chest infection causing pneumonia
+              a urine infection in the bladder a problem in the abdomen, such as
+              a burst ulcer or a hole in the bowel an infected cut or bite a
+              wound from trauma or surgery a leg ulcer or cellulitis Sepsis can
+              be caused by a huge variety of different germs, like
+              streptococcus, e-coli, MRSA or C diff. Most cases are caused by
+              common bacteria, which normally don’t make us ill.
+            </p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">Can you get sepsis more than once?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>There has been some research into sepsis survivors which found that,
+                over the following year at least, some survivors are more prone to
+                contracting another infection. As with any infection, there is a
+                risk of sepsis. But most people who’ve had sepsis before seek 
+                help early on and are treated promptly.<br><br>
+                If you (or your loved one) have an infection, then you should keep
+                a close eye for any signs of sepsis and seek help urgently if worried.
+            </p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">Is sepsis contagious?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>No, sepsis is not contagious. The infection that triggered sepsis could be contagious.
+                Chicken pox can spread between children (and adults), but if someone with chicken pox 
+                develops sepsis, this does not mean someone else who has chicken pox will also develop sepsis. 
+                This is because sepsis is your body's reaction to infection, not an infection itself.
+                <br>
+            </p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">Can I prevent sepsis?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>Sepsis is the result of an infection, so by treating any infection seriously, 
+                you will decrease the chances of developing sepsis. This means:
+                Taking antibiotics or other antimicrobial if prescribed
+                Finishing the entire course of medications
+                Don't take antibiotics or take someone else's antibiotics needlessly 
+                to reduce the chances of developing antibiotic-resistant infections
+                Frequent and thorough hand washing
+            </p>
+            <span class="line"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- </section> -->
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <!-- <div class="box">
+          <h3>About us</h3>
+          <p>
+          
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">Mumbai</a>
+          <a href="#">pune</a>
+          <a href="#">chennai</a>
+          <a href="#">bangalore</a>
+          <a href="#">hyderabad</a>
+          <a href="#">new delhi</a>
+        </div> -->
+
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <!-- <a href="#">protect</a> -->
+          <a href="#">symtoms</a>
+          <a href="#">prevent</a>
+      
+        </div>
+
+        <div class="box">
+          <h3>Contact info</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890.</p>
+          <p><i class="fas fa-envelope"></i> example@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> mumbai, indai - 400104.</p>
+          <!-- <div class="share">
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- <h1 class="credit"> created by <a href="#"> mr. web designer </a> all rights reserved! </h1> -->
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- scroll top  -->
+
+    <a href="#home" class="scroll-top">
+      <img src="./static/images/scroll-img.svg" alt="" />
+    </a>
+
+    <!-- jquery cdn link  -->
+    <script>
+      let li = document.querySelectorAll(".faq-text li");
+      for (var i = 0; i < li.length; i++) {
+        li[i].addEventListener("click", (e) => {
+          let clickedLi;
+          if (e.target.classList.contains("question-arrow")) {
+            clickedLi = e.target.parentElement;
+          } else {
+            clickedLi = e.target.parentElement.parentElement;
+          }
+          clickedLi.classList.toggle("showAnswer");
+        });
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

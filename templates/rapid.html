@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sepsis Prediction Website</title>
+    <link rel="stylesheet" href="./static/css/rapid.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <!-- FontAweome CDN Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search" />
+        <input type="checkbox" id="show-menu" />
+        <label for="show-menu" class="menu-icon" id="menu"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <div class="content">
+          <div class="logo"><a href="http://127.0.0.1:5000/">Sepsis</a></div>
+          <ul class="links">
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/about">About</a></li>
+            <li>
+              <a href="http://127.0.0.1:5000/" class="desktop-link">Tests</a>
+              <input type="checkbox" id="show-features" />
+              <label for="show-features">Tests</label>
+              <ul>
+                <li>
+                  <a href="http://127.0.0.1:5000/rapidtest">Rapid Test</a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5000/advancedtest">Advanced Test</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5000/#contact">Contact</a></li>
+            <li><a href="http://127.0.0.1:5000/hiw">How it Works</a></li>
+            <li><a href="http://127.0.0.1:5000/faq">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section class="rapid" id="rapid">
+      <!-- start Quiz button -->
+      <div class="start_btn"><button>Start Test</button></div>
+
+      <!-- Info Box -->
+      <div class="info_box">
+        <!-- <div class="info-title"><span>Some Rules of this Quiz</span></div> -->
+        <div class="info-list">
+          <!-- <div class="info">1. You will have only <span>15 seconds</span> per each question.</div> -->
+          <div class="info">
+            1. Once you select your option, it can't be undone.
+          </div>
+          <!-- <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div> -->
+          <div class="info">
+            2. You'll get result on the basis of your selected symptoms
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="quit">Exit</button>
+          <button class="restart">Continue</button>
+        </div>
+      </div>
+
+      <!-- Quiz Box -->
+      <div class="quiz_box">
+        <div class="header">
+          <div class="title">Rapid Test</div>
+          <!-- <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div> -->
+        </div>
+        <div class="section">
+          <div class="que_text">
+            <!-- Here I've inserted question from JavaScript -->
+          </div>
+          <div class="option_list">
+            <!-- Here I've inserted options from JavaScript -->
+          </div>
+        </div>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+          <div class="total_que">
+            <!-- Here I've inserted Question Count Number from JavaScript -->
+          </div>
+          <button class="next_btn">Next Que</button>
+        </footer>
+      </div>
+    </section>
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-laptop-medical"></i>
+      </div>
+      <div class="complete_text">You've completed the Test!</div>
+      <div class="score_text">
+        <!-- Here I've inserted Score Result from JavaScript -->
+      </div>
+      <div class="buttons">
+        <button class="restart">Test Again</button>
+        <button class="quit">Quit</button>
+      </div>
+    </div>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <!-- <div class="box">
+          <h3>About us</h3>
+          <p>
+          
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">Mumbai</a>
+          <a href="#">pune</a>
+          <a href="#">chennai</a>
+          <a href="#">bangalore</a>
+          <a href="#">hyderabad</a>
+          <a href="#">new delhi</a>
+        </div> -->
+
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <!-- <a href="#">protect</a> -->
+          <a href="#">symtoms</a>
+          <a href="#">prevent</a>
+         
+        </div>
+
+        <div class="box">
+          <h3>Contact info</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890.</p>
+          <p><i class="fas fa-envelope"></i> example@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> mumbai, indai - 400104.</p>
+          <!-- <div class="share">
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div> -->
+        </div>
+      </div>
+
+      <h1 class="credit">
+        <!-- created by <a href="#"> mr. web designer </a> all rights reserved! -->
+      </h1>
+      -->
+    </section>
+
+    <!-- footer section ends -->
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="./static/js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="./static/js/rapidscript.js"></script>
+  </body>
+</html>
